@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import gallerybg from '../images/image7.jpg';
 
-import { motion, useAnimation } from 'framer-motion';
 
 const staggeredVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -71,17 +70,12 @@ const galleryData = [
 ];
 
 const Gallery = () => {
-    const controls = useAnimation();
-
-    useEffect(() => {
-        controls.start('visible');
-    }, [controls]);
 
     return (
         <div>
             <img alt="Gallery Background Image" src={gallerybg} className="w-100 h-50 " />
             <Container className='px-3'>
-                <motion.div initial="hidden" animate={controls} variants={staggeredVariants} className='each-head d-flex justify-content-center my-4'>Gallery</motion.div>
+                <div initial="hidden" variants={staggeredVariants} className='each-head d-flex justify-content-center my-4'>Gallery</div>
                 <Row>
                     {galleryData.map((image, index) => (
                         <Col key={index} xs={12} sm={6} md={4}>
@@ -100,7 +94,7 @@ const Gallery = () => {
 
 const GalleryItem = ({ img, index }) => {
     return (
-        <motion.div
+        <div
             custom={index}
             variants={staggeredVariants}
             className="mb-4"
@@ -108,7 +102,7 @@ const GalleryItem = ({ img, index }) => {
             <Card style={{ height: "250px" }}>
                 <Card.Img variant="top" src={img} style={{ height: "100%", objectFit: "cover" }} />
             </Card>
-        </motion.div>
+        </div>
     );
 };
 
