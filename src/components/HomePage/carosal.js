@@ -1,10 +1,10 @@
 import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import carousel1 from '../images/goodone.jpg';
-import carousel2 from '../images/goodone.jpg';
-import carousel3 from '../images/IMG-20250111-WA0083.jpg';
-import '../index';
+import carousel1 from '../../images/goodone.jpg';
+import carousel2 from '../../images/goodone.jpg';
+import carousel3 from '../../images/IMG-20250111-WA0083.jpg';
+import '../../index';
 
 
 function CarouselHeader() {

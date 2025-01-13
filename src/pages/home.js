@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselHeader from "../pages/carosal"; // Adjust the path based on your folder structure
+import CarouselHeader from "../components/HomePage/carosal"; // Adjust the path based on your folder structure
 import image1 from '../images/image1.png'
 const Homepage = () => {
     const styles = {
@@ -81,7 +81,6 @@ const Homepage = () => {
                     />
                 </div>
             </section>
-            {/* Carousel Section */}
             <CarouselHeader />
         </div>
     );

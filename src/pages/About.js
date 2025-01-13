@@ -4,7 +4,7 @@ import image1 from '../images/image11.jpg';
 import image2 from '../images/image14.jpg';
 import image3 from '../images/image16.jpg';
 import image4 from '../images/image6.jpg';
-import HistoryComp from './history';
+import HistoryComp from '../components/AboutPage/history';
 
 const About = () => {
     const styles = {
