@@ -47,3 +47,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.justify-text{
+  text-align: justify;
+}
