@@ -59,7 +59,7 @@ function WhyMeSections() {
           {/* First Column */}
           <Col lg={5} md={6} sm={12} className="mb-4">
             {/* Card 1 */}
-            <Card className="d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0 mb-lg-2">
               <Card.Img
                 variant="left"
                 src={why1}
@@ -75,7 +75,7 @@ function WhyMeSections() {
             </Card>
 
             {/* Card 2 */}
-            <Card className="d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0 mb-lg-2">
               <Card.Img
                 variant="left"
                 src={why2}
@@ -94,7 +94,7 @@ function WhyMeSections() {
           {/* Second Column */}
           <Col lg={5} md={6} sm={12} className="mb-4">
             {/* Card 3 */}
-            <Card className="d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0 mb-lg-2">
               <Card.Img
                 variant="left"
                 src={why3}
@@ -110,7 +110,7 @@ function WhyMeSections() {
             </Card>
 
             {/* Card 4 */}
-            <Card className="d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0 mb-lg-2">
               <Card.Img
                 variant="left"
                 src={why4}
@@ -132,7 +132,7 @@ function WhyMeSections() {
 
       {/* Call-to-action Section */}
       <Container fluid>
-        <Row className="concelt123 py-4 px-5 my-lg-4 mx-lg-5">
+        <Row className="concelt123 py-4 px-5">
           <Col lg={9} className="concelt_row">
             <div className="concelt_text">
               <strong>Are You Ready to Transform Your Vision into Reality?</strong>
@@ -146,7 +146,7 @@ function WhyMeSections() {
             <Link to="/contact">
               <button className="concelt_button px-5">Get Started</button>
             </Link>
-          </Col>
+          </Col>  
         </Row>
       </Container>
     </section>

@@ -6,7 +6,8 @@ import image3 from '../images/image16.jpg';
 import image4 from '../images/image6.jpg';
 import HistoryComp from '../components/AboutPage/history';
 import Footer from '../Reusable/footer';
-import { color } from 'framer-motion';
+import { Container, Row, Col, Image } from "react-bootstrap";
+import tril from '../images/image.png';
 
 const About = () => {
     const styles = {
@@ -59,10 +60,10 @@ const About = () => {
             lineHeight: '1.5',
         },
         profileImage: {
-            width: '300px',
+            width: '100%',
             height: '300px',
-            borderRadius: '10%',
-            objectFit: 'cover',
+            borderRadius: '25px',
+            // objectFit: 'cover',
             marginTop: '20px',
         },
         scrollSection: {
@@ -114,6 +115,11 @@ const About = () => {
             <div style={styles.contentSection}>
                 <div style={styles.textSection}>
                     <h2>Empowering Journey to Success, Every Step of the Way.</h2>
+                    <Image fluid
+                    src={tril}
+                    alt="Profile"
+                    style={styles.profileImage}
+                />
                     <div style={styles.textColumns}>
                         <div style={styles.textColumn}>
                             We are deeply committed to guiding our clients toward success by identifying and sharing common trends and proven strategies. Through personalized approaches, I aim to empower individuals in their personal and professional growth, helping them overcome challenges and reach their full potential. Our philosophy revolves around understanding each client's unique needs and crafting solutions that foster long-term success.
@@ -123,11 +129,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    src={story}
-                    alt="Profile"
-                    style={styles.profileImage}
-                />
+                
             </div>
 
             {/* Scrollable Section */}
