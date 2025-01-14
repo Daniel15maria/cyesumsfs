@@ -1,8 +1,10 @@
 import React from 'react'
-import { Container, Row, Col, Table, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import '../../App.css';
 import { Link } from 'react-router-dom';
 import im1 from '../../images/image17.jpg'
+import im2 from '../../images/image20.jpg'
+import im3 from '../../images/image8.jpg'
 
 const SmallAboutSection = () => {
   return (
@@ -36,92 +38,87 @@ const SmallAboutSection = () => {
             your journey to resilience and success. Together, we can unlock your
             full potential.
           </p>
-
         </div>
 
         {/* Section 2 - Row with columns */}
         <Row className='mb-4'>
           {/* First column */}
-          <Col lg={6} className="d-flex align-items-center justify-content-center">
+          <Col xs={12} md={6} lg={6} className="d-flex justify-content-center">
             <div
               style={{
                 width: "100%",
                 height: "300px",
-                backgroundColor: "#ccc",
+                backgroundImage: `url(${im1})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                borderRadius: '8px',
               }}
-            >
-              {/* Replace with <img> */}
-            </div>
+            />
           </Col>
 
           {/* Second column */}
-          <Col lg={6}>
+          <Col xs={12} md={6} lg={6}>
             <div
               style={{
                 width: "100%",
                 height: "200px",
-                backgroundColor: "#aaa",
+                backgroundImage: `url(${im2})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
                 marginBottom: "5px",
+                borderRadius: '8px',
               }}
-            >
-              {/* Replace with <img> */}
-            </div>
+            />
             <div
               style={{
                 width: "100%",
                 height: "100px",
-                backgroundColor: "#888",
+                backgroundImage: `url(${im3})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                borderRadius: '8px',
               }}
-            >
-              {/* Replace with <img> */}
-            </div>
+            />
           </Col>
-
         </Row>
+
+        {/* Section 3 */}
         <Row>
-          <Link to="/program" className="text-primary fw-bold">
-            Read More →
-          </Link>
+          <Col className="d-flex justify-content-center">
+            <Link to="/program" className="btn btn-primary fw-bold">
+              Read More →
+            </Link>
+          </Col>
         </Row>
-
-        {/* <Row>
-      <Table striped bordered hover size="sm">
-      <thead>
-        <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>A1</td>
-          <td colSpan={2}>A2 and A3 merged</td>
-        </tr>
-        <tr>
-          <td>B1</td>
-          <td colSpan={2}>B2 and B3 merged</td>
-        </tr>
-        <tr>
-          <td colSpan={3}>C1+D1+E1 merged</td>
-        </tr>
-        <tr>
-          <td colSpan={3}></td>
-          <td colSpan={2}>C2+D2 merged</td>
-          <td>D3</td>
-        </tr>
-        <tr>
-          <td colSpan={3}>C1+D1+E1 merged</td>
-          <td colSpan={2}>E2+E3 merged</td>
-        </tr>
-      </tbody>
-    </Table>
-      </Row> */}
       </Container>
 
+      <style jsx>{`
+        /* Media Queries for Responsive Design */
+        @media (max-width: 767px) {
+          /* On small screens (phones), make sure images take full width */
+          .section-image {
+            width: 100% !important;
+            height: auto !important;
+          }
+        }
+
+        @media (max-width: 992px) {
+          /* On medium screens (tablets), adjust the height of the images */
+          .section-image {
+            width: 100% !important;
+            height: 250px !important;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          /* On large screens (desktops), keep the default sizes */
+          .section-image {
+            width: 100% !important;
+            height: 300px !important;
+          }
+        }
+      `}</style>
     </section>
-
-
   )
 }
 
