@@ -21,47 +21,47 @@ const About = () => {
             borderBottomRightRadius: '50% 10%',
         },
         title: {
-            fontSize: '36px',
+            fontSize: '40px',
             fontWeight: 'bold',
             margin: 0,
         },
         subtitle: {
-            fontSize: '18px',
+            fontSize: '20px',
             margin: '10px 0 0',
             color: '#555',
         },
         contentSection: {
             display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'flex-start',
+            flexDirection: 'column',
+            alignItems: 'center',
             padding: '40px 20px',
             maxWidth: '1200px',
             margin: '0 auto',
         },
         textSection: {
-            flex: 2,
             display: 'flex',
             flexDirection: 'column',
             gap: '20px',
+            textAlign: 'center',
+        },
+        textColumns: {
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            gap: '20px',
+            justifyContent: 'center',
         },
         textColumn: {
-            flex: 1,
-            paddingRight: '20px',
-            fontSize: '16px',
+            flex: '1 1 300px',
+            fontSize: '20px',
             lineHeight: '1.5',
         },
         profileImage: {
-            flex: 1,
             width: '300px',
             height: '300px',
             borderRadius: '10%',
             objectFit: 'cover',
-            marginLeft: '20px',
-        },
-        heading: {
-            fontSize: '24px',
-            fontWeight: 'bold',
-            marginBottom: '20px',
+            marginTop: '20px',
         },
         scrollSection: {
             background: '#f6f9f8',
@@ -69,17 +69,16 @@ const About = () => {
         },
         scrollContent: {
             display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
+            flexDirection: 'column',
             alignItems: 'center',
             maxWidth: '1200px',
             margin: '0 auto',
         },
         imageGrid: {
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
             gap: '20px',
-            flex: 1,
+            width: '100%',
         },
         gridImage: {
             width: '100%',
@@ -88,34 +87,35 @@ const About = () => {
             borderRadius: '10px',
         },
         bioSection: {
-            flex: 1,
-            marginLeft: '20px',
+            marginTop: '30px',
+            textAlign: 'center',
         },
         bioTitle: {
-            fontSize: '24px',
+            fontSize: '26px',
             fontWeight: 'bold',
             marginBottom: '20px',
         },
         bioText: {
-            fontSize: '16px',
+            fontSize: '18px',
             lineHeight: '1.5',
         },
     };
 
     return (
         <div style={styles.aboutContainer}>
+            {/* Curved Section */}
             <div style={styles.curveSection}>
                 <h1 style={styles.title}>My story</h1>
                 <p style={styles.subtitle}>
                     Empowering Lives Through Guidance, Compassion, and Transformation
                 </p>
             </div>
+
+            {/* Content Section */}
             <div style={styles.contentSection}>
                 <div style={styles.textSection}>
-                    <h2 style={styles.heading}>
-                        Empowering Journey to Success, Every Step of the Way.
-                    </h2>
-                    <div style={{ display: 'flex', gap: '20px' }}>
+                    <h2>Empowering Journey to Success, Every Step of the Way.</h2>
+                    <div style={styles.textColumns}>
                         <div style={styles.textColumn}>
                             We are deeply committed to guiding our clients toward success by identifying and sharing common trends and proven strategies. Through personalized approaches, I aim to empower individuals in their personal and professional growth, helping them overcome challenges and reach their full potential. Our philosophy revolves around understanding each client's unique needs and crafting solutions that foster long-term success.
                         </div>
@@ -125,7 +125,7 @@ const About = () => {
                     </div>
                 </div>
                 <img
-                    src={story} // Replace with the actual image path
+                    src={story}
                     alt="Profile"
                     style={styles.profileImage}
                 />
@@ -135,29 +135,13 @@ const About = () => {
             <div style={styles.scrollSection}>
                 <div style={styles.scrollContent}>
                     <div style={styles.imageGrid}>
-                        <img
-                            src={image1} // Replace with actual image paths
-                            alt="Image 1"
-                            style={styles.gridImage}
-                        />
-                        <img
-                            src={image2}
-                            alt="Image 2"
-                            style={styles.gridImage}
-                        />
-                        <img
-                            src={image3}
-                            alt="Image 3"
-                            style={styles.gridImage}
-                        />
-                        <img
-                            src={image4}
-                            alt="Image 4"
-                            style={styles.gridImage}
-                        />
+                        <img src={image1} alt="Image 1" style={styles.gridImage} />
+                        <img src={image2} alt="Image 2" style={styles.gridImage} />
+                        <img src={image3} alt="Image 3" style={styles.gridImage} />
+                        <img src={image4} alt="Image 4" style={styles.gridImage} />
                     </div>
                     <div style={styles.bioSection}>
-                        <h2 style={styles.bioTitle}>Short Bio-graphy</h2>
+                        <h2 style={styles.bioTitle}>Short Biography</h2>
                         <p style={styles.bioText}>
                             A. Chinnasamy Yesuraj (MSFS), born on 24/08/1989 in Kovilnaru, Tamil Nadu, is a committed priest with a passion for counselling. He completed his education at RC Middle School and St. Paul's Higher Secondary School, laying a strong foundation for his future.
                         </p>
@@ -167,9 +151,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
             <HistoryComp />
             <Footer />
-
         </div>
     );
 };

@@ -6,6 +6,7 @@
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "cyesumsfs": "file:",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.17.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.7",

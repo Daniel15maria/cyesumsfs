@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import image1 from '../../images/image1.png';
+import { Link } from 'react-router-dom';
+
 
 const HomeHeaderSection = () => {
     const styles = {
@@ -37,31 +39,33 @@ const HomeHeaderSection = () => {
 
     return (
         <section className="d-flex align-items-center justify-content-center">
-        <Container className="py-5 d-flex align-items-center justify-content-center" >
-            <Row className="align-items-center justify-content-center">
-                <Col md={6}>
-                    <h4 style={styles.h4}>
-                        MOTIVATING - STRENGTHENING - FOSTERING - SUPPORTING
-                    </h4>
-                    <br />
-                    <h1 style={styles.h1}>Rev. Fr. A. Chinnasamy Yesuraj, MSFS</h1>
-                    <br />
-                    <p style={styles.p}>
-                        A Counsellor, A Trainer, with expertise in motivating change,
-                        fostering growth, and supporting well-being for personal and
-                        professional development.
-                    </p>
-                    <button style={styles.connectButton}>Connect Now</button>
-                </Col>
-                <Col md={6} className="text-center">
-                    <img
-                        src={image1}
-                        alt="Rev. Fr. A. Chinnasamy Yesuraj"
-                        style={styles.profileImage}
-                    />
-                </Col>
-            </Row>
-        </Container>
+            <Container className="py-5 d-flex align-items-center justify-content-center" >
+                <Row className="align-items-center justify-content-center">
+                    <Col md={6}>
+                        <h4 style={styles.h4}>
+                            MOTIVATING - STRENGTHENING - FOSTERING - SUPPORTING
+                        </h4>
+                        <br />
+                        <h1 style={styles.h1}>Rev. Fr. A. Chinnasamy Yesuraj, MSFS</h1>
+                        <br />
+                        <p style={styles.p}>
+                            A Counsellor, A Trainer, with expertise in motivating change,
+                            fostering growth, and supporting well-being for personal and
+                            professional development.
+                        </p>
+                        <Link to="/contact">
+                            <button style={styles.connectButton}>Connect Now</button>
+                        </Link>
+                    </Col>
+                    <Col md={6} className="text-center">
+                        <img
+                            src={image1}
+                            alt="Rev. Fr. A. Chinnasamy Yesuraj"
+                            style={styles.profileImage}
+                        />
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 };

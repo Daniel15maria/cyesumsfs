@@ -30,8 +30,8 @@ export const Footer = () => {
                                 A Counsellor, A Trainer, with expertise in motivating change, fostering growth, and supporting well-being for personal and professional development.
                             </p>
                             <ul className="social-links list-unstyled">
-                                <li><a href="https://www.facebook.com/people/Patna-Jesuit-Society-Youth-Ministry/61558331201148/" className="text-white"><FaFacebook className="fb" /></a></li>
-                                <li><a href="https://www.instagram.com/patnajesuityouthministry/" className="text-white"><FaInstagram className="ig" /></a></li>
+                                <li><a href="https://www.facebook.com" className="text-white"><FaFacebook className="fb" /></a></li>
+                                <li><a href="https://www.instagram.com" className="text-white"><FaInstagram className="ig" /></a></li>
                                 <li><a href="https://www.twitter.com" className="text-white"><FaTwitter className="tw" /></a></li>
                                 <li><a href="https://www.youtube.com" className="text-white"><FaYoutube className="gl" /></a></li>
                             </ul>

@@ -75,7 +75,6 @@ const animationVariants = {
     initial: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.1 } }
 };
-
 const Program = () => {
     const [expandedCard, setExpandedCard] = useState(null); // State to track expanded card
 
@@ -85,9 +84,11 @@ const Program = () => {
 
     return (
         <div className="card-page">
-            {/* Optional Hero Section */}
-            <div className="hero-section" style={{ backgroundColor: '#487D49', height: '200px' }}>
-                <h1 className="text-center text-white pt-5">Programs</h1>
+            {/* Hero Section */}
+            <div className="hero-section" style={{ backgroundColor: '#487D49', height: '250px', display: 'flex', alignItems: 'center' }}>
+                <h1 className="text-center text-white w-100" style={{ paddingTop: '50px', fontSize: '2.5rem', fontWeight: 'bold' }}>
+                    Programs
+                </h1>
             </div>
 
             <Container className="d-flex justify-content-center my-5">

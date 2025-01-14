@@ -5,11 +5,14 @@ import why1 from '../../images/whyme1.png';
 import why2 from '../../images/whyme2.png';
 import why3 from '../../images/whyme3.png';
 import why4 from '../../images/whyme4.png';
+import { Link } from 'react-router-dom';
 
-function WhyMeSections () {
+
+function WhyMeSections() {
   return (
     <section style={{
-        color: "#E1F1E7",}}>
+      color: "#E1F1E7",
+    }}>
       <Container>
         {/* First Row: Title */}
         <Row className="justify-content-center mt-2">
@@ -53,97 +56,99 @@ function WhyMeSections () {
         </Row>
         {/* Third Row: Cards */}
         <Row className="justify-content-center">
-            <Col lg={1}></Col>
-            {/* First Column */}
-            <Col lg={5} md={6} sm={12}>
-                {/* Card 1 */}
-                <Card className="mb-4 d-flex flex-row border-0">
-                    <Card.Img
-                    variant="left"
-                    src={why1}
-                    alt="Variant 1"
-                    style={{ width: "150px", height: "100%" }}
-                    />
-                    <Card.Body>
-                        <Card.Title>Dedicated counsellor, trainer</Card.Title>
-                        <Card.Text>
-                        Empowering growth through dedicated counselling and transformative training sessions
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
+          <Col lg={1}></Col>
+          {/* First Column */}
+          <Col lg={5} md={6} sm={12}>
+            {/* Card 1 */}
+            <Card className="mb-4 d-flex flex-row border-0">
+              <Card.Img
+                variant="left"
+                src={why1}
+                alt="Variant 1"
+                style={{ width: "150px", height: "100%" }}
+              />
+              <Card.Body>
+                <Card.Title>Dedicated counsellor, trainer</Card.Title>
+                <Card.Text>
+                  Empowering growth through dedicated counselling and transformative training sessions
+                </Card.Text>
+              </Card.Body>
+            </Card>
 
-                {/* Card 2 */}
-                <Card className="mb-4 d-flex flex-row border-0">
-                <Card.Img
-                    variant="left"
-                    src={why2}
-                    alt="Variant 2"
-                    style={{ width: "150px", height: "100%" }}
-                />
-                <Card.Body>
-                    <Card.Title>Organized tasks</Card.Title>
-                    <Card.Text>
-                    Streamlining your journey through organized tasks for effective personal growth.
-                    </Card.Text>
-                </Card.Body>
-                </Card>
-            </Col>
+            {/* Card 2 */}
+            <Card className="mb-4 d-flex flex-row border-0">
+              <Card.Img
+                variant="left"
+                src={why2}
+                alt="Variant 2"
+                style={{ width: "150px", height: "100%" }}
+              />
+              <Card.Body>
+                <Card.Title>Organized tasks</Card.Title>
+                <Card.Text>
+                  Streamlining your journey through organized tasks for effective personal growth.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
 
-            {/* Second Column */}
-            <Col lg={5} md={6} sm={12}>
-                {/* Card 3 */}
-                <Card className="mb-4 d-flex flex-row border-0">
-                <Card.Img
-                    variant="left"
-                    src={why3}
-                    alt="Variant 3"
-                    style={{ width: "150px", height: "100%" }}
-                />
-                <Card.Body>
-                    <Card.Title>Easy feedback sharing</Card.Title>
-                    <Card.Text>
-                    Encouraging seamless feedback sharing to enhance customer learning and development.
-                    </Card.Text>
-                </Card.Body>
-                </Card>
+          {/* Second Column */}
+          <Col lg={5} md={6} sm={12}>
+            {/* Card 3 */}
+            <Card className="mb-4 d-flex flex-row border-0">
+              <Card.Img
+                variant="left"
+                src={why3}
+                alt="Variant 3"
+                style={{ width: "150px", height: "100%" }}
+              />
+              <Card.Body>
+                <Card.Title>Easy feedback sharing</Card.Title>
+                <Card.Text>
+                  Encouraging seamless feedback sharing to enhance customer learning and development.
+                </Card.Text>
+              </Card.Body>
+            </Card>
 
-                {/* Card 4 */}
-                <Card className="mb-4 d-flex flex-row border-0">
-                <Card.Img
-                    variant="left"
-                    src={why4}
-                    alt="Variant 4"
-                    style={{ width: "150px", height: "100%" }}
-                />
-                <Card.Body>
-                    <Card.Title>Never miss deadline</Card.Title>
-                    <Card.Text>
-                    Always helps you to  meet your deadlines with effective planning and organization strategies.
-                    </Card.Text>
-                </Card.Body>
-                </Card>
-            </Col>
-            <Col lg={1}></Col>
-            </Row>
+            {/* Card 4 */}
+            <Card className="mb-4 d-flex flex-row border-0">
+              <Card.Img
+                variant="left"
+                src={why4}
+                alt="Variant 4"
+                style={{ width: "150px", height: "100%" }}
+              />
+              <Card.Body>
+                <Card.Title>Never miss deadline</Card.Title>
+                <Card.Text>
+                  Always helps you to  meet your deadlines with effective planning and organization strategies.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={1}></Col>
+        </Row>
       </Container>
-      <Container fluid> 
-      <Row className="concelt123 py-4 px-5">
-        <Col lg={9} className="concelt_row">
-          <div className="concelt_text">
-            <strong>Are You Ready to Transform Your Vision into Reality?</strong>
-          </div>
-          <div className="concelt_text1">
-          With personalized guidance and expert insights, you can cultivate growth and well-being—no prior experience needed.
-          </div>
-        </Col>
-        <Col lg={3}>
+      <Container fluid>
+        <Row className="concelt123 py-4 px-5">
+          <Col lg={9} className="concelt_row">
+            <div className="concelt_text">
+              <strong>Are You Ready to Transform Your Vision into Reality?</strong>
+            </div>
+            <div className="concelt_text1">
+              With personalized guidance and expert insights, you can cultivate growth and well-being—no prior experience needed.
+            </div>
+          </Col>
+          <Col lg={3}>
             <br></br>
-            <button className="concelt_button px-5">Get Started</button>
-        </Col>
-      </Row>
-    </Container>
+            <Link to="/contact">
+              <button className="concelt_button px-5">Get Started</button>
+            </Link>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }
 
-export default WhyMeSections ;
+export default WhyMeSections;

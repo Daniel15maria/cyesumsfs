@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import prog1 from '../../images/prog1.png';
+import { Link, useNavigate } from 'react-router-dom';
 
 function ProgramsIntro() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const navigate = useNavigate();
+
+  // Ensure the page layout is ready before any interaction happens
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoaded(true);
+    };
+
+    // Check if the document is already loaded
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    // Add a slight delay to ensure page elements are loaded before navigation
+    setTimeout(() => {
+      navigate('/program');
+    }, 300);
+  };
+
   return (
     <section>
       <Container>
@@ -50,11 +81,11 @@ function ProgramsIntro() {
         {/* Third Row: Cards */}
         <Row className="justify-content-center">
           {/* Card 1 */}
-          <Col md={4} sm={12} className="">
-            <Card  className="p-5" style={{ backgroundColor: "#397478", color: "#FFFFFF" }}>
+          <Col md={4} sm={12}>
+            <Card className="p-5" style={{ backgroundColor: "#397478", color: "#FFFFFF" }}>
               <Card.Img
                 variant="top"
-                src= {prog1}
+                src={prog1}
                 alt="Program 1"
               />
               <Card.Body>
@@ -63,7 +94,9 @@ function ProgramsIntro() {
                   We share common trends and strategies for improving you Lorem
                   ipsum dolor sit amet conse
                 </Card.Text>
-                <Button variant="light">Learn More</Button>
+                <Link to="/program" style={{ textDecoration: 'none' }}>
+                  <Button variant="light">Learn More</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
@@ -73,7 +106,7 @@ function ProgramsIntro() {
             <Card className="p-5" style={{ backgroundColor: "#161C2D", color: "#FFFFFF" }}>
               <Card.Img
                 variant="top"
-                src= {prog1}
+                src={prog1}
                 alt="Program 2"
               />
               <Card.Body>
@@ -82,17 +115,19 @@ function ProgramsIntro() {
                   We share common trends and strategies for improving you Lorem
                   ipsum dolor sit amet conse
                 </Card.Text>
-                <Button variant="light">Learn More</Button>
+                <Link to="/program" style={{ textDecoration: 'none' }}>
+                  <Button variant="light">Learn More</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
 
           {/* Card 3 */}
           <Col md={4} sm={12} className="mb-4">
-            <Card  className="p-5" style={{ backgroundColor: "#397478", color: "#FFFFFF" }}>
+            <Card className="p-5" style={{ backgroundColor: "#397478", color: "#FFFFFF" }}>
               <Card.Img
                 variant="top"
-                src= {prog1}
+                src={prog1}
                 alt="Program 3"
               />
               <Card.Body>
@@ -101,7 +136,9 @@ function ProgramsIntro() {
                   We share common trends and strategies for improving you Lorem
                   ipsum dolor sit amet conse
                 </Card.Text>
-                <Button variant="light">Learn More</Button>
+                <Link to="/program" style={{ textDecoration: 'none' }}>
+                  <Button variant="light">Learn More</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
