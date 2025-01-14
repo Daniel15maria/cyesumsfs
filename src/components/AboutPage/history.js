@@ -6,7 +6,7 @@ import '../../index.css';
 const HistoryComp = () => {
     return (
         <Container>
-            <div className='each-head mt-4 d-flex justify-content-center'>PLACES OF MINISTRIES AFTER ORDINATION</div>
+            <div className='each-head h2 mt-4 d-flex justify-content-center'>PLACES OF MINISTRIES AFTER ORDINATION</div>
             <div className='my-4 '>
                 <VerticalTimeline lineColor={"black"}>
                     <VerticalTimelineElement

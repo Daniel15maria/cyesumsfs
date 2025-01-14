@@ -8,6 +8,7 @@ import HistoryComp from '../components/AboutPage/history';
 import Footer from '../Reusable/footer';
 import { Container, Row, Col, Image } from "react-bootstrap";
 import tril from '../images/image.png';
+import '../App.css';
 
 const About = () => {
     const styles = {
@@ -121,10 +122,10 @@ const About = () => {
                     style={styles.profileImage}
                 />
                     <div style={styles.textColumns}>
-                        <div style={styles.textColumn}>
+                        <div style={styles.textColumn} className='justify-text'>
                             We are deeply committed to guiding our clients toward success by identifying and sharing common trends and proven strategies. Through personalized approaches, I aim to empower individuals in their personal and professional growth, helping them overcome challenges and reach their full potential. Our philosophy revolves around understanding each client's unique needs and crafting solutions that foster long-term success.
                         </div>
-                        <div style={styles.textColumn}>
+                        <div style={styles.textColumn} className='justify-text'>
                             With a strong foundation in counseling psychology, I specialize in marriage and family therapy, as well as addiction and rehabilitation. My research on the 'Psychological Impact of Social Networking Sites on Youth' underscores my dedication to addressing the complexities of contemporary issues. This combination of expertise and insight allows me to provide tailored guidance, ensuring meaningful and transformative progress for those I serve.
                         </div>
                     </div>
@@ -143,10 +144,10 @@ const About = () => {
                     </div>
                     <div style={styles.bioSection}>
                         <h2 style={styles.bioTitle}>Short Biography</h2>
-                        <p style={styles.bioText}>
+                        <p style={styles.bioText} className='justify-text'>
                             A. Chinnasamy Yesuraj (MSFS), born on 24/08/1989 in Kovilnaru, Tamil Nadu, is a committed priest with a passion for counselling. He completed his education at RC Middle School and St. Paul's Higher Secondary School, laying a strong foundation for his future.
                         </p>
-                        <p style={styles.bioText}>
+                        <p style={styles.bioText} className='justify-text'>
                             After attending the SFS Minor Seminary and Salesianum, he pursued philosophy at Suvidya College and theology at Orients Theological College. Ordained on April 26, 2016, Fr. Yesuraj has dedicated his life to serving the community and fostering spiritual growth.
                         </p>
                     </div>
