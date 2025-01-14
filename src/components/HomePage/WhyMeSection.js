@@ -7,12 +7,9 @@ import why3 from '../../images/whyme3.png';
 import why4 from '../../images/whyme4.png';
 import { Link } from 'react-router-dom';
 
-
 function WhyMeSections() {
   return (
-    <section style={{
-      color: "#E1F1E7",
-    }}>
+    <section style={{ color: "#E1F1E7" }}>
       <Container>
         {/* First Row: Title */}
         <Row className="justify-content-center mt-2">
@@ -54,13 +51,15 @@ function WhyMeSections() {
             </p>
           </Col>
         </Row>
+
         {/* Third Row: Cards */}
         <Row className="justify-content-center">
-          <Col lg={1}></Col>
+          <Col lg={1} md={0}></Col>
+
           {/* First Column */}
-          <Col lg={5} md={6} sm={12}>
+          <Col lg={5} md={6} sm={12} className="mb-4">
             {/* Card 1 */}
-            <Card className="mb-4 d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0">
               <Card.Img
                 variant="left"
                 src={why1}
@@ -70,13 +69,13 @@ function WhyMeSections() {
               <Card.Body>
                 <Card.Title>Dedicated counsellor, trainer</Card.Title>
                 <Card.Text>
-                  Empowering growth through dedicated counselling and transformative training sessions
+                  Empowering growth through dedicated counselling and transformative training sessions.
                 </Card.Text>
               </Card.Body>
             </Card>
 
             {/* Card 2 */}
-            <Card className="mb-4 d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0">
               <Card.Img
                 variant="left"
                 src={why2}
@@ -93,9 +92,9 @@ function WhyMeSections() {
           </Col>
 
           {/* Second Column */}
-          <Col lg={5} md={6} sm={12}>
+          <Col lg={5} md={6} sm={12} className="mb-4">
             {/* Card 3 */}
-            <Card className="mb-4 d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0">
               <Card.Img
                 variant="left"
                 src={why3}
@@ -111,7 +110,7 @@ function WhyMeSections() {
             </Card>
 
             {/* Card 4 */}
-            <Card className="mb-4 d-flex flex-row border-0">
+            <Card className="d-flex flex-row border-0">
               <Card.Img
                 variant="left"
                 src={why4}
@@ -121,14 +120,17 @@ function WhyMeSections() {
               <Card.Body>
                 <Card.Title>Never miss deadline</Card.Title>
                 <Card.Text>
-                  Always helps you to  meet your deadlines with effective planning and organization strategies.
+                  Always helps you to meet your deadlines with effective planning and organization strategies.
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={1}></Col>
+
+          <Col lg={1} md={0}></Col>
         </Row>
       </Container>
+
+      {/* Call-to-action Section */}
       <Container fluid>
         <Row className="concelt123 py-4 px-5">
           <Col lg={9} className="concelt_row">
@@ -140,7 +142,7 @@ function WhyMeSections() {
             </div>
           </Col>
           <Col lg={3}>
-            <br></br>
+            <br />
             <Link to="/contact">
               <button className="concelt_button px-5">Get Started</button>
             </Link>

@@ -68,8 +68,8 @@ function ScrollTriggeredStats() {
                                 {index === 0
                                     ? `${(numbers[index] / 1000000).toFixed(1)}M+`
                                     : index === 2
-                                    ? `${numbers[index].toFixed(1)}/5.0`
-                                    : `${Math.round(numbers[index])}%`}
+                                        ? `${numbers[index].toFixed(1)}/5.0`
+                                        : `${Math.round(numbers[index])}%`}
                             </p>
                             {stat.label}
                         </Col>
@@ -77,6 +77,46 @@ function ScrollTriggeredStats() {
                     <Col lg={1} sm={0}></Col>
                 </Row>
             </Container>
+
+            <style jsx>{`
+                /* Media Queries for Responsive Design */
+                @media (max-width: 767px) {
+                    /* On small screens (phones), display statistics in a single column */
+                    .h1 {
+                        font-size: 2rem; /* Smaller text for mobile */
+                    }
+                    .py-3 {
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                @media (max-width: 992px) {
+                    /* On medium screens (tablets), adjust the layout */
+                    .h1 {
+                        font-size: 2.5rem; /* Slightly bigger text for tablets */
+                    }
+                    .py-3 {
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                    }
+                    .container-fluid {
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    /* On large screens (desktops), maintain larger text */
+                    .h1 {
+                        font-size: 3rem; /* Bigger text for larger screens */
+                    }
+                    .py-3 {
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+            `}</style>
         </div>
     );
 }

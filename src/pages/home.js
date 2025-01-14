@@ -12,12 +12,14 @@ const Homepage = () => {
         <div>
             <HomeHeaderSection />
             <SmallAboutSection />
-            
-            <ScrollTriggeredStats />
+
+            {/* Add scroll triggered stats with spacing for mobile */}
+            <div className="mt-2 mt-md-0">
+                <ScrollTriggeredStats />
+            </div>
+
             <ProgramsIntro />
             <WhyMeSections />
-
-            {/* <CarouselHeader /> */}
             <Footer />
         </div>
     );

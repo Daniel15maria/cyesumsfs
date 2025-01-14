@@ -66,7 +66,10 @@ const Contact = () => {
     };
 
     return (
-        <div className="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+        <div
+            className="d-flex justify-content-center align-items-center bg-light"
+            style={{ minHeight: '100vh', paddingTop: '80px' }} // Adjust paddingTop to match the navbar height
+        >
             <div className="container shadow-lg rounded bg-white p-4" style={{ maxWidth: '900px' }}>
                 <h2 className="mb-4 text-center">Contact Us</h2>
                 <div className="row">
@@ -76,7 +79,6 @@ const Contact = () => {
                         <p>
                             <FaUser className="me-2" />
                             Rev. Fr. A. Chinnasamy Yesuraj, MSFS
-
                         </p>
                         <p>
                             <FaPhone className="me-2" />
@@ -91,7 +93,6 @@ const Contact = () => {
                             Thedal Institute of Spirituality,
                             Our Lady of Lourdes Church,
                             <br />
-
                             Dindigul Dt, Tamilnadu, India
                             <br />
                             Ammayanayakkanur – 624201,
