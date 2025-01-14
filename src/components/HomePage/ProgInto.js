@@ -81,7 +81,7 @@ function ProgramsIntro() {
         {/* Third Row: Cards */}
         <Row className="justify-content-center">
           {/* Card 1 */}
-          <Col md={4} sm={12}>
+          <Col md={4} sm={12} className="mb-4">
             <Card className="p-5" style={{ backgroundColor: "#397478", color: "#FFFFFF" }}>
               <Card.Img
                 variant="top"

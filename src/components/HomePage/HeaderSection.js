@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col,Image } from "react-bootstrap";
 import image1 from '../../images/image1.png';
 import { Link } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ const HomeHeaderSection = () => {
             lineHeight: "1.6",
         },
         connectButton: {
-            backgroundColor: "#4CAF50",
+            backgroundColor: "#629584",
             color: "#fff",
             border: "none",
             padding: "10px 20px",
@@ -38,9 +38,9 @@ const HomeHeaderSection = () => {
     };
 
     return (
-        <section className="d-flex align-items-center justify-content-center">
-            <Container className="py-5 d-flex align-items-center justify-content-center" >
-                <Row className="align-items-center justify-content-center">
+        <section className="d-flex align-items-center justify-content-center ">
+            <Container className="py-5 d-flex align-items-center justify-content-center " >
+                <Row className="align-items-center justify-content-center ">
                     <Col md={6}>
                         <h4 style={styles.h4}>
                             MOTIVATING - STRENGTHENING - FOSTERING - SUPPORTING
@@ -58,7 +58,8 @@ const HomeHeaderSection = () => {
                         </Link>
                     </Col>
                     <Col md={6} className="text-center">
-                        <img
+                        <Image
+                            fluid
                             src={image1}
                             alt="Rev. Fr. A. Chinnasamy Yesuraj"
                             style={styles.profileImage}
