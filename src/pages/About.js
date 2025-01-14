@@ -6,6 +6,7 @@ import image3 from '../images/image16.jpg';
 import image4 from '../images/image6.jpg';
 import HistoryComp from '../components/AboutPage/history';
 import Footer from '../Reusable/footer';
+import { color } from 'framer-motion';
 
 const About = () => {
     const styles = {
@@ -14,15 +15,16 @@ const About = () => {
             color: '#333',
         },
         curveSection: {
-            background: 'linear-gradient(to bottom, #629584, #ffffff)',
+            background: '#629584',
             textAlign: 'center',
-            padding: '50px 20px',
-            borderBottomLeftRadius: '50% 10%',
-            borderBottomRightRadius: '50% 10%',
+            padding: '100px 20px',
+            borderBottomLeftRadius: '50% 200%',
+            borderBottomRightRadius: '50% 200%',
         },
         title: {
             fontSize: '40px',
             fontWeight: 'bold',
+            color: "white",
             margin: 0,
         },
         subtitle: {
@@ -106,9 +108,6 @@ const About = () => {
             {/* Curved Section */}
             <div style={styles.curveSection}>
                 <h1 style={styles.title}>My story</h1>
-                <p style={styles.subtitle}>
-                    Empowering Lives Through Guidance, Compassion, and Transformation
-                </p>
             </div>
 
             {/* Content Section */}

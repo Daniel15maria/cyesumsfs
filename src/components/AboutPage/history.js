@@ -12,9 +12,9 @@ const HistoryComp = () => {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="1 st Year"
-                        contentStyle={{ borderTop: "3px solid  #124076" }}
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        contentStyle={{ borderTop: "3px solid  #629584" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
                     //    icon={<WorkIcon />}
                     >
                         <h3 className="vertical-timeline-element-title">Assistant Parish Priest at Kadayal</h3>
@@ -25,8 +25,8 @@ const HistoryComp = () => {
                         className="vertical-timeline-element--work"
                         date="2 nd year"
                         contentStyle={{ borderTop: "3px solid   " }}
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
                     //    icon={<WorkIcon />}
                     >
                         <h3 className="vertical-timeline-element-title">Assistant Parish Priest at Panbari</h3>
@@ -38,9 +38,9 @@ const HistoryComp = () => {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         date="3 rd Year"
-                        contentStyle={{ borderTop: "3px solid  #124076" }}
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        contentStyle={{ borderTop: "3px solid  #629584" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
 
                     >
                         <h3 className="vertical-timeline-element-title">Dean of Studies </h3>
@@ -48,10 +48,10 @@ const HistoryComp = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        contentStyle={{ borderTop: "3px solid  #124076" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        contentStyle={{ borderTop: "3px solid  #629584" }}
                         date="4&5 th year"
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
                     //    icon={<WorkIcon />}
                     >
                         <h3 className="vertical-timeline-element-title">
@@ -63,10 +63,10 @@ const HistoryComp = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        contentStyle={{ borderTop: "3px solid  #124076" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        contentStyle={{ borderTop: "3px solid  #629584" }}
                         date="6 th year"
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
                     //    icon={<WorkIcon />}
                     >
                         <h3 className="vertical-timeline-element-title">
@@ -79,10 +79,10 @@ const HistoryComp = () => {
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        contentStyle={{ borderTop: "3px solid  #124076" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        contentStyle={{ borderTop: "3px solid  #629584" }}
                         date="7 & 8 th year"
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
                     //    icon={<WorkIcon />}
                     >
                         <h3 className="vertical-timeline-element-title">
@@ -94,10 +94,10 @@ const HistoryComp = () => {
 
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentArrowStyle={{ borderRight: "7px solid  #124076" }}
-                        contentStyle={{ borderTop: "3px solid  #124076" }}
+                        contentArrowStyle={{ borderRight: "7px solid  #629584" }}
+                        contentStyle={{ borderTop: "3px solid  #629584" }}
                         date="9 th year"
-                        iconStyle={{ background: "#124076", color: "#fff" }}
+                        iconStyle={{ background: "#629584", color: "#fff" }}
                     //    icon={<WorkIcon />}
                     >
                         <h3 className="vertical-timeline-element-title">

@@ -36,7 +36,7 @@ function CustomNavbar() {
                             <Nav.Link href="#gallery">Gallery</Nav.Link>
 
                             <Button
-                                variant="primary"
+                                variant="light"
                                 href="#contact"
                                 className="ms-3"
                             >

@@ -85,9 +85,10 @@ const Program = () => {
     return (
         <div className="card-page">
             {/* Hero Section */}
-            <div className="hero-section" style={{ backgroundColor: '#487D49', height: '250px', display: 'flex', alignItems: 'center' }}>
+            <div className="hero-section" style={{ backgroundColor: '#629584', height: '250px', display: 'flex', alignItems: 'center',  borderBottomLeftRadius: '1000px', // Adjust the value as needed
+  borderBottomRightRadius: '1000px' }}>
                 <h1 className="text-center text-white w-100" style={{ paddingTop: '50px', fontSize: '2.5rem', fontWeight: 'bold' }}>
-                    Programs
+                    Training Programs
                 </h1>
             </div>
 
@@ -109,7 +110,7 @@ const Program = () => {
                                     <Card.Body className="d-flex flex-column">
                                         <Card.Title
                                             className="text-center"
-                                            style={{ fontWeight: '700', color: '#487D49' }}
+                                            style={{ fontWeight: '700', color: '#629584' }}
                                         >
                                             {card.title}
                                         </Card.Title>
@@ -117,7 +118,7 @@ const Program = () => {
                                         <Button
                                             onClick={() => toggleExpand(index)}
                                             className="mt-auto align-self-center"
-                                            style={{ backgroundColor: '#487D49', border: 'none' }}
+                                            style={{ backgroundColor: '#629584', border: 'none' }}
                                         >
                                             {expandedCard === index ? 'Show Less' : 'Read More'}
                                             <FaArrowRight className="ms-1 mb-1" />

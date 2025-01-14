@@ -25,9 +25,9 @@ const Experience = () => {
     ];
 
     return (
-        <div>
-            <div style={{ backgroundColor: '#5A7D6C', padding: '50px', fontFamily: 'Arial, sans-serif' }}>
-                <h1 style={{ color: '#FFFFFF', fontSize: '48px', marginBottom: '30px', textAlign: 'center' }}>
+        <div >
+            <div style={{ backgroundColor: '#629584', fontFamily: 'Arial, sans-serif' }} className='py-5'>
+                <h1 className='py-lg-5' style={{ color: '#FFFFFF', fontSize: '48px', marginBottom: '30px', textAlign: 'center' }}>
                     My <span style={{ fontWeight: 'normal' }}>Professional Experience</span>
                 </h1>
                 <Container>

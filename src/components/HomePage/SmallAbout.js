@@ -85,7 +85,7 @@ const SmallAboutSection = () => {
         {/* Section 3 */}
         <Row>
           <Col className="d-flex justify-content-center">
-            <Link to="/program" className="btn btn-primary fw-bold">
+            <Link to="/program" className="btn btn-dark fw-bold">
               Read More →
             </Link>
           </Col>
