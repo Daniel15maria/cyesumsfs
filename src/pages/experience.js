@@ -2,57 +2,62 @@ import React from 'react';
 import image1 from '../images/goodone.jpg'
 import image2 from '../images/image6.jpg'
 import image3 from '../images/image12.jpg'
+import Footer from '../Reusable/footer';
 
 
 const Experience = () => {
     return (
-        <div style={{ backgroundColor: '#5A7D6C', padding: '50px', fontFamily: 'Arial, sans-serif' }}>
-            <h1 style={{ color: '#FFFFFF', fontSize: '48px', marginBottom: '20px' }}>
-                My
-                <span style={{ fontWeight: 'normal' }}> Professional Experience</span>
-            </h1>
-            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '30px' }}>
-                {/* Card 1 */}
-                <div style={cardStyle}>
-                    <img
-                        src={image1}
-                        alt="Professional Counsellor"
-                        style={imageStyle}
-                    />
-                    <h3 style={titleStyle}>Professional Counsellor</h3>
-                    <p style={textStyle}>
-                        Empowering individuals through expert guidance and personalized counseling strategies.
-                    </p>
+        <div>
+            <div style={{ backgroundColor: '#5A7D6C', padding: '50px', fontFamily: 'Arial, sans-serif' }}>
+                <h1 style={{ color: '#FFFFFF', fontSize: '48px', marginBottom: '20px' }}>
+                    My
+                    <span style={{ fontWeight: 'normal' }}> Professional Experience</span>
+                </h1>
+                <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '30px' }}>
+                    {/* Card 1 */}
+                    <div style={cardStyle}>
+                        <img
+                            src={image1}
+                            alt="Professional Counsellor"
+                            style={imageStyle}
+                        />
+                        <h3 style={titleStyle}>Professional Counsellor</h3>
+                        <p style={textStyle}>
+                            Empowering individuals through expert guidance and personalized counseling strategies.
+                        </p>
+                    </div>
+                    {/* Card 2 */}
+                    <div style={cardStyle}>
+                        <img
+                            src={image2}
+                            alt="Professor"
+                            style={imageStyle}
+                        />
+                        <h3 style={titleStyle}>
+                            Professor at Assam Don Bosco University, Guwahati
+                        </h3>
+                        <p style={textStyle}>
+                            Dedicated educator shaping minds at Assam Don Bosco University, Guwahati.
+                        </p>
+                    </div>
+                    {/* Card 3 */}
+                    <div style={cardStyle}>
+                        <img
+                            src={image3}
+                            alt="Visiting Lecturer"
+                            style={imageStyle}
+                        />
+                        <h3 style={titleStyle}>
+                            Visiting Lecturer at St. Clement College, Nagaon
+                        </h3>
+                        <p style={textStyle}>
+                            Engaging visiting lecturer at St. Clement College, Nagaon, inspiring students.
+                        </p>
+                    </div>
                 </div>
-                {/* Card 2 */}
-                <div style={cardStyle}>
-                    <img
-                        src={image2}
-                        alt="Professor"
-                        style={imageStyle}
-                    />
-                    <h3 style={titleStyle}>
-                        Professor at Assam Don Bosco University, Guwahati
-                    </h3>
-                    <p style={textStyle}>
-                        Dedicated educator shaping minds at Assam Don Bosco University, Guwahati.
-                    </p>
-                </div>
-                {/* Card 3 */}
-                <div style={cardStyle}>
-                    <img
-                        src={image3}
-                        alt="Visiting Lecturer"
-                        style={imageStyle}
-                    />
-                    <h3 style={titleStyle}>
-                        Visiting Lecturer at St. Clement College, Nagaon
-                    </h3>
-                    <p style={textStyle}>
-                        Engaging visiting lecturer at St. Clement College, Nagaon, inspiring students.
-                    </p>
-                </div>
+
             </div>
+            <Footer />
         </div>
     );
 };

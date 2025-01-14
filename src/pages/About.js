@@ -5,6 +5,7 @@ import image2 from '../images/image14.jpg';
 import image3 from '../images/image16.jpg';
 import image4 from '../images/image6.jpg';
 import HistoryComp from '../components/AboutPage/history';
+import Footer from '../Reusable/footer';
 
 const About = () => {
     const styles = {
@@ -167,6 +168,8 @@ const About = () => {
                 </div>
             </div>
             <HistoryComp />
+            <Footer />
+
         </div>
     );
 };
