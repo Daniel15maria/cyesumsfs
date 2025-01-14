@@ -36,8 +36,9 @@ const HomeHeaderSection = () => {
     };
 
     return (
-        <Container className="py-5">
-            <Row className="align-items-center">
+        <section className="d-flex align-items-center justify-content-center">
+        <Container className="py-5 d-flex align-items-center justify-content-center" >
+            <Row className="align-items-center justify-content-center">
                 <Col md={6}>
                     <h4 style={styles.h4}>
                         MOTIVATING - STRENGTHENING - FOSTERING - SUPPORTING
@@ -61,6 +62,7 @@ const HomeHeaderSection = () => {
                 </Col>
             </Row>
         </Container>
+        </section>
     );
 };
 

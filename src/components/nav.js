@@ -8,7 +8,7 @@ import logo from '../images/logo2.png'; // Replace with the actual path to your 
 function CustomNavbar() {
     return (
         <>
-            <Navbar bg="dark" variant="dark" expand="lg" className="py-3">
+            <Navbar bg="dark" variant="dark" expand="lg" className="py-3 fixed-top">
                 <Container>
                     <Navbar.Brand href="#home" className="d-flex align-items-center">
                         <img
