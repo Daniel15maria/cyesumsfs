@@ -1,10 +1,9 @@
 import React from 'react';
 import { Container, Button, Col, Row } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaGoogle, FaYoutube, FaInstagram, FaPhone } from 'react-icons/fa';
-import { Person, Envelope, Telephone, Location, Pin } from 'react-bootstrap-icons';
-import logo from '../images/logo2.png';
 import { useNavigate } from 'react-router-dom';
 import { FaUser, FaMapMarkerAlt } from 'react-icons/fa';
+import logo from '../images/logo2.png';
 
 export const Footer = () => {
     const navigate = useNavigate();
@@ -29,12 +28,20 @@ export const Footer = () => {
                             <p>
                                 A Counsellor, A Trainer, with expertise in motivating change, fostering growth, and supporting well-being for personal and professional development.
                             </p>
-                            <ul className="social-links list-unstyled">
-                                <li><a href="https://www.facebook.com" className="text-white"><FaFacebook className="fb" /></a></li>
-                                <li><a href="https://www.instagram.com" className="text-white"><FaInstagram className="ig" /></a></li>
-                                <li><a href="https://www.twitter.com" className="text-white"><FaTwitter className="tw" /></a></li>
-                                <li><a href="https://www.youtube.com" className="text-white"><FaYoutube className="gl" /></a></li>
-                            </ul>
+                            <div className="social-links d-flex justify-content-center justify-content-lg-start gap-3">
+                                <a href="https://www.facebook.com" className="text-white">
+                                    <FaFacebook className="fb" size={24} />
+                                </a>
+                                <a href="https://www.instagram.com" className="text-white">
+                                    <FaInstagram className="ig" size={24} />
+                                </a>
+                                <a href="https://www.twitter.com" className="text-white">
+                                    <FaTwitter className="tw" size={24} />
+                                </a>
+                                <a href="https://www.youtube.com" className="text-white">
+                                    <FaYoutube className="gl" size={24} />
+                                </a>
+                            </div>
                         </div>
                     </Col>
                     <Col lg={3} className='d-none d-sm-block'>
@@ -46,7 +53,6 @@ export const Footer = () => {
                                 <li><Button className="footer-navbutton footer-nav text-white" variant='transparent p-0' onClick={() => navigate('/experience')}><div className='footer-nav footer-navbutton text-white'>Experience</div></Button></li>
                                 <li><Button variant='transparent p-0' onClick={() => navigate('/gallery')}><div className='footer-nav footer-navbutton text-white'>Gallery</div></Button></li>
                                 <li><Button variant='transparent p-0' onClick={() => navigate('/contact')}><div className='footer-nav footer-navbutton text-white'>Contact Us</div></Button></li>
-
                             </ul>
                         </div>
                     </Col>
@@ -58,9 +64,6 @@ export const Footer = () => {
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <FaPhone className="me-3" />
-
-
-
                                 <span>+91 9080063704 <br />+91 96554822867</span>
                             </div>
                             <div className="d-flex align-items-center">
@@ -69,13 +72,10 @@ export const Footer = () => {
                                     Thedal Institute of Spirituality,
                                     Our Lady of Lourdes Church,
                                     <br />
-
                                     Dindigul Dt, Tamilnadu, India
                                     <br />
                                     Ammayanayakkanur – 624201,
                                 </span>
-
-
                             </div>
                         </div>
                     </Col>
