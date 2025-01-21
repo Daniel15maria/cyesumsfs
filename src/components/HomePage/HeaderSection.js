@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col,Image } from "react-bootstrap";
-import image1 from '../../images/image1.png';
+import { Container, Row, Col, Image } from "react-bootstrap";
+import image1 from '../../images/slected1.jpg';
 import { Link } from 'react-router-dom';
-
 
 const HomeHeaderSection = () => {
     const styles = {
@@ -14,6 +13,11 @@ const HomeHeaderSection = () => {
             fontSize: "36px",
             fontWeight: "bold",
             margin: "10px 0",
+        },
+        education: {
+            fontSize: "18px",  // Smaller font size for the education
+            fontWeight: "bold", // Normal font weight for the education
+            marginTop: "5px", // Adds some space between name and education
         },
         p: {
             fontSize: "18px",
@@ -38,15 +42,20 @@ const HomeHeaderSection = () => {
     };
 
     return (
-        <section className="d-flex align-items-center justify-content-center ">
-            <Container className="py-5 d-flex align-items-center justify-content-center " >
-                <Row className="align-items-center justify-content-center ">
+        <section className="d-flex align-items-center justify-content-center">
+            <Container className="py-5 d-flex align-items-center justify-content-center">
+                <Row className="align-items-center justify-content-center">
                     <Col md={6}>
                         <h4 style={styles.h4}>
                             MOTIVATING - STRENGTHENING - FOSTERING - SUPPORTING
                         </h4>
                         <br />
-                        <h1 style={styles.h1}>Rev. Fr. A. Chinnasamy Yesuraj, MSFS</h1>
+                        <h1 style={styles.h1}>
+                            Rev. Fr. A. Chinnasamy Yesuraj, MSFS
+                        </h1>
+                        <h5 style={styles.education}>
+                            M. Sc (Counselling Psychology)
+                        </h5>
                         <br />
                         <p style={styles.p}>
                             A Counsellor, A Trainer, with expertise in motivating change,

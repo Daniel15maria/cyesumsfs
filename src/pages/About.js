@@ -6,8 +6,8 @@ import image3 from '../images/image16.jpg';
 import image4 from '../images/image6.jpg';
 import HistoryComp from '../components/AboutPage/history';
 import Footer from '../Reusable/footer';
+import Carosal from '../components/HomePage/carosal'; // Update the import path as per your file structure
 import { Container, Row, Col, Image } from "react-bootstrap";
-import tril from '../images/image.png';
 import '../App.css';
 
 const About = () => {
@@ -60,13 +60,6 @@ const About = () => {
             fontSize: '20px',
             lineHeight: '1.5',
         },
-        profileImage: {
-            width: '100%',
-            height: '300px',
-            borderRadius: '25px',
-            // objectFit: 'cover',
-            marginTop: '20px',
-        },
         scrollSection: {
             background: '#f6f9f8',
             padding: '50px 20px',
@@ -108,19 +101,20 @@ const About = () => {
     return (
         <div style={styles.aboutContainer}>
             {/* Curved Section */}
-            <div style={styles.curveSection}>
-                <h1 style={styles.title}>My story</h1>
+            <div className="hero-section" style={{
+                backgroundColor: '#629584', height: '250px', display: 'flex', alignItems: 'center', borderBottomLeftRadius: '1000px', // Adjust the value as needed
+                borderBottomRightRadius: '1000px'
+            }}>
+                <h1 className="text-center text-white w-100" style={{ paddingTop: '50px', fontSize: '2.5rem', fontWeight: 'bold' }}>
+                    MY STORY
+                </h1>
             </div>
 
             {/* Content Section */}
             <div style={styles.contentSection}>
                 <div style={styles.textSection}>
                     <h2>Empowering Journey to Success, Every Step of the Way.</h2>
-                    <Image fluid
-                    src={tril}
-                    alt="Profile"
-                    style={styles.profileImage}
-                />
+                    <Carosal /> {/* Replaced Image component */}
                     <div style={styles.textColumns}>
                         <div style={styles.textColumn} className='justify-text'>
                             We are deeply committed to guiding our clients toward success by identifying and sharing common trends and proven strategies. Through personalized approaches, I aim to empower individuals in their personal and professional growth, helping them overcome challenges and reach their full potential. Our philosophy revolves around understanding each client's unique needs and crafting solutions that foster long-term success.
@@ -130,7 +124,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                
             </div>
 
             {/* Scrollable Section */}

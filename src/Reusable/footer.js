@@ -64,7 +64,7 @@ export const Footer = () => {
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <FaPhone className="me-3" />
-                                <span>+91 9080063704 <br />+91 96554822867</span>
+                                <span>+91 9080063704 <br />+91 9655482286</span>
                             </div>
                             <div className="d-flex align-items-center">
                                 <FaMapMarkerAlt className="me-3" />
