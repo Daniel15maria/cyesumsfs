@@ -82,7 +82,7 @@ const Contact = () => {
                         </p>
                         <p>
                             <FaPhone className="me-2" />
-                            +91 9080063704 <br />+91 96554822867
+                            +91 9080063704 <br />+91 9655482286
                         </p>
                         <p>
                             <FaEnvelope className="me-2" />

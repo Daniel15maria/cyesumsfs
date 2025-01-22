@@ -29,10 +29,10 @@ export const Footer = () => {
                                 A Counsellor, A Trainer, with expertise in motivating change, fostering growth, and supporting well-being for personal and professional development.
                             </p>
                             <div className="social-links d-flex justify-content-center justify-content-lg-start gap-3">
-                                <a href="https://www.facebook.com" className="text-white">
+                                <a href="https://www.facebook.com/share/1AkdKM6zWv/" className="text-white">
                                     <FaFacebook className="fb" size={24} />
                                 </a>
-                                <a href="https://www.instagram.com" className="text-white">
+                                <a href="https://www.instagram.com/yesurajmsfs?utm_source=qr&igsh=MXI1a3JxNDIzbWZmZg==" className="text-white">
                                     <FaInstagram className="ig" size={24} />
                                 </a>
                                 <a href="https://www.twitter.com" className="text-white">
@@ -64,7 +64,7 @@ export const Footer = () => {
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <FaPhone className="me-3" />
-                                <span>+91 9080063704 <br />+91 9655482286</span>
+                                <span>+91 9080063704 <br />   +91 9655482286</span>
                             </div>
                             <div className="d-flex align-items-center">
                                 <FaMapMarkerAlt className="me-3" />
